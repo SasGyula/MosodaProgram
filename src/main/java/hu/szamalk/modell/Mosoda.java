@@ -8,7 +8,9 @@ public class Mosoda {
     public String toString() {
         String s = "";
         for(int i = 0; i<ruhak.length; i++){
-            s += ruhak[i].getTulajdonos() + " " + ruhak[i].isTiszta() + "\n";
+            if(ruhak[i] != null) {
+                s += ruhak[i].getTulajdonos() + " " + ruhak[i].isTiszta() + "\n";
+            }
         }
         return s;
     }
@@ -37,9 +39,9 @@ public class Mosoda {
 
     public void kiadas(String tulaj){
         for(int i=0; i<ruhak.length; i++){
-            if(ruhak[i].getTulajdonos() == tulaj){
-                ruhak[i] = null;
-            }
+                if (ruhak[i].getTulajdonos() == tulaj) {
+                    ruhak[i] = null;
+                }
         }
     }
     public void mos(){

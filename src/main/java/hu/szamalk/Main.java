@@ -13,10 +13,9 @@ public class Main {
         mosoda.bevesz(new Ruha("asd2"));
         mosoda.bevesz(new Ruha("asd3"));
         mosoda.bevesz(new Ruha("asd4"));
-        mosoda.bevesz(new Ruha("asd5"));
-        mosoda.bevesz(new Ruha("asd6"));
         System.out.println(mosoda.toString());
-
+        mosoda.kiadas("asd4");
+        System.out.println(mosoda.toString());
     }
 
 }
